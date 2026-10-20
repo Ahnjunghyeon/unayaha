@@ -11,6 +11,7 @@ fn main() {
             if let Some(window) = app.get_webview_window("main") {
                 // Keep the full-screen transparent layer click-through so it cannot
                 // intercept clicks intended for the user's apps.
+                window.set_decorations(false)?;
                 window.set_ignore_cursor_events(true)?;
             }
 

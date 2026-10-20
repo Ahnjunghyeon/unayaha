@@ -1,6 +1,6 @@
 [package]
 name = "usagi-surprise"
-version = "0.2.0"
+version = "0.3.0"
 description = "A transparent Usagi desktop companion demo"
 authors = ["Usagi Demo"]
 edition = "2021"
