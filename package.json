@@ -1,0 +1,14 @@
+{
+  "name": "usagi-surprise-desktop-demo",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Usagi transparent Windows desktop companion demo",
+  "scripts": {
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "browser": "node server.mjs"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.8.4"
+  }
+}

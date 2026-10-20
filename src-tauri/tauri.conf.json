@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "우사기 깜짝 댄스",
+  "version": "0.2.0",
+  "identifier": "com.usagi.surprise-demo",
+  "build": {
+    "frontendDist": "../web"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "우사기 깜짝 댄스",
+        "width": 1280,
+        "height": 800,
+        "fullscreen": true,
+        "center": true,
+        "visible": true,
+        "transparent": true,
+        "decorations": false,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "resizable": false,
+        "shadow": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "msi"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "shortDescription": "우사기가 깨어나 춤추는 투명 데스크톱 앱 데모",
+    "category": "Utility"
+  }
+}
