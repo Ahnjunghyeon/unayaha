@@ -1,6 +1,6 @@
 [package]
 name = "usagi-surprise"
-version = "0.3.0"
+version = "0.4.3"
 description = "A transparent Usagi desktop companion demo"
 authors = ["Usagi Demo"]
 edition = "2021"
@@ -9,11 +9,12 @@ edition = "2021"
 tauri-build = { version = "2", features = [] }
 
 [dependencies]
-tauri = { version = "2", features = [] }
+tauri = { version = "2", features = ["tray-icon"] }
 
 [target.'cfg(windows)'.dependencies]
 windows = { version = "0.61", features = [
   "Win32_Foundation",
+  "Win32_Media_Audio",
   "Win32_System_LibraryLoader",
   "Win32_UI_Input_KeyboardAndMouse",
   "Win32_UI_WindowsAndMessaging"

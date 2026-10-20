@@ -1,10 +1,12 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "우사기 깜짝 댄스",
-  "version": "0.3.0",
+  "version": "0.4.3",
   "identifier": "com.usagi.surprise-demo",
   "build": {
-    "frontendDist": "../web"
+    "frontendDist": "../web",
+    "beforeDevCommand": "node scripts/sync-web.cjs",
+    "beforeBuildCommand": "node scripts/sync-web.cjs"
   },
   "app": {
     "withGlobalTauri": true,
@@ -16,7 +18,7 @@
         "height": 800,
         "fullscreen": true,
         "center": true,
-        "visible": true,
+        "visible": false,
         "transparent": true,
         "decorations": false,
         "alwaysOnTop": true,
@@ -24,8 +26,7 @@
         "resizable": false,
         "shadow": false,
         "focus": false,
-        "focusable": false,
-        "noRedirectionBitmap": true
+        "focusable": false
       }
     ],
     "security": {
